@@ -1,0 +1,12 @@
+[submodule "holo"]
+	path = holo
+	url = https://aur.archlinux.org/holo.git/
+[submodule "holo-build"]
+	path = holo-build
+	url = https://aur.archlinux.org/holo-build.git/
+[submodule "holo-run-scripts"]
+	path = holo-run-scripts
+	url = https://aur.archlinux.org/holo-run-scripts.git/
+[submodule "holo-users-groups"]
+	path = holo-users-groups
+	url = https://aur.archlinux.org/holo-users-groups.git/

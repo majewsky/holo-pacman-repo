@@ -1,0 +1,19 @@
+*.tar
+*.tar.*
+*.zip
+*.tgz
+*.log
+*.log.*
+*.sig
+
+# AUR metadata
+.AURINFO
+
+pkg/
+src/
+
+.env
+build/
+repo/*.pkg.tar.xz
+repo/holo.db*
+repo/holo.files*
