@@ -10,3 +10,6 @@
 [submodule "holo-users-groups"]
 	path = holo-users-groups
 	url = https://aur.archlinux.org/holo-users-groups.git/
+[submodule "holo-ssh-keys"]
+	path = holo-ssh-keys
+	url = https://aur.archlinux.org/holo-ssh-keys.git/

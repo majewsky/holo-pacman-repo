@@ -7,10 +7,11 @@ create-repo: build-packages
 	@ln -sf holo.db repo/holo.files
 
 # These are the packages that I want.
-build-packages: pkg-holo pkg-holo-build pkg-holo-run-scripts pkg-holo-users-groups
+build-packages: pkg-holo pkg-holo-build pkg-holo-run-scripts pkg-holo-ssh-keys pkg-holo-users-groups
 
 # These are dependencies between these packages.
 pkg-holo-run-scripts: pkg-holo
+pkg-holo-ssh-keys: pkg-holo
 pkg-holo-users-groups: pkg-holo
 
 # the build rule for packages
