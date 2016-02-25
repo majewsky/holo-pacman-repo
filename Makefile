@@ -2,7 +2,7 @@
 # 1. build all packages and copy them into the repo/ subdirectory
 # 2. make a pacman repo in there
 create-repo: build-packages
-	@repo-add -n -f repo/holo.db.tar.xz repo/*.pkg.tar.xz
+	@repo-add -n repo/holo.db.tar.xz repo/*.pkg.tar.xz
 	@rm -f repo/holo.db.tar.xz.old
 	@ln -sf holo.db repo/holo.files
 
