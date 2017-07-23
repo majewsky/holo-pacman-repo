@@ -1,0 +1,24 @@
+pkgname='replicator'
+pkgver=0.1
+pkgrel=1
+pkgdesc='Renders configuration files from templates'
+arch=('i686' 'x86_64' 'armv7h')
+url='https://github.com/holocm/replicator'
+license=('GPL3')
+depends=()
+makedepends=('go')
+source=("https://github.com/holocm/${pkgname}/archive/v${pkgver}.tar.gz")
+sha256sums=('0880e7fd58e2a8172302dd6144beaa399f84ec4a3949a96181864bea09b8be24')
+
+options=('!strip') # binaries are already stripped inside the Makefile
+
+build() {
+    cd "${srcdir}/${pkgname}-${pkgver}"
+    make
+}
+
+package() {
+    cd "${srcdir}/${pkgname}-${pkgver}"
+    make install DESTDIR="${pkgdir}"
+    install -d -m 0755 "${pkgdir}/etc/replicator.d"
+}
