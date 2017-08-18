@@ -15,12 +15,7 @@ push-repo: create-repo
 	@rsync -vau --delete-delay --progress $(THIS_DIRECTORY)/repo/ bethselamin:/data/static-web/repo.holocm.org/archlinux/x86_64/
 
 # These are the packages that I want.
-build-packages: pkg-holo pkg-holo-build pkg-holo-run-scripts pkg-holo-ssh-keys pkg-holo-users-groups pkg-replicator
-
-# These are dependencies between these packages.
-pkg-holo-run-scripts: pkg-holo
-pkg-holo-ssh-keys: pkg-holo
-pkg-holo-users-groups: pkg-holo
+build-packages: pkg-holo pkg-holo-build pkg-replicator
 
 # the build rule for packages
 pkg-%:
