@@ -1,5 +1,5 @@
 pkgname='replicator'
-pkgver=0.3
+pkgver=0.4.0
 pkgrel=1
 pkgdesc='Renders configuration files from templates'
 arch=('i686' 'x86_64' 'armv7h')
@@ -8,7 +8,7 @@ license=('GPL3')
 depends=()
 makedepends=('go')
 source=("https://github.com/holocm/${pkgname}/archive/v${pkgver}.tar.gz")
-sha256sums=('23c3c1848c09530796feb5cec8c46892c442603cf580ae71f27436f527e354f2')
+sha256sums=('1575b749d33e9b262c0b91a102dad3b9ac4aad259b7ff6ff3c734eb76d5e30d7')
 
 options=('!strip') # binaries are already stripped inside the Makefile
 
