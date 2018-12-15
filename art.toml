@@ -1,0 +1,6 @@
+[[source]]
+path = "."
+
+[target]
+path = "/x/src/github.com/majewsky/holo-pacman-repo/repo"
+name = "holo"

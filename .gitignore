@@ -13,7 +13,7 @@ pkg/
 src/
 
 .env
-build/
+.art-cache
 repo/*.pkg.tar.xz
 repo/holo.db*
 repo/holo.files*
