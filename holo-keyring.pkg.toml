@@ -1,0 +1,68 @@
+[package]
+name    = "holo-keyring"
+version = "20201009.1"
+description = "PGP keyring for the Holo repository"
+
+requires = [
+  "pacman", # for pacman-key(8)
+]
+
+[[action]]
+on     = "setup"
+script = '''
+  if [ -x usr/bin/pacman-key ] && usr/bin/pacman-key -l >/dev/null 2>&1; then
+    usr/bin/pacman-key --populate holo
+  fi
+'''
+
+[[file]]
+path    = "/usr/share/pacman/keyrings/holo-trusted"
+content = '''
+2A5349F6B4D7305A85DED8D4F7A9C9DC4631BD1A:4:
+'''
+
+[[file]]
+path    = "/usr/share/pacman/keyrings/holo.gpg"
+content = '''
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+BfCvEbk1B7xQkA7z7WQHzFBBIk5D
+=kTC/
+-----END PGP PUBLIC KEY BLOCK-----
+'''
