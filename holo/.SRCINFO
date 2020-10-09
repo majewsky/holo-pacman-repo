@@ -1,0 +1,34 @@
+pkgbase = holo
+	pkgdesc = Minimalistic configuration management
+	pkgver = 2.2
+	pkgrel = 2
+	url = http://holocm.org
+	arch = i686
+	arch = x86_64
+	arch = armv7h
+	license = GPL3
+	makedepends = go
+	makedepends = perl
+	makedepends = git
+	makedepends = openssh
+	optdepends = git: to display diffs using git-diff(1)
+	optdepends = openssh: to provision SSH public keys
+	optdepends = shadow: to provision user accounts and groups
+	provides = holo-files=2.2
+	provides = holo-run-scripts=2.2
+	provides = holo-ssh-keys=2.2
+	provides = holo-users-groups=2.2
+	replaces = holo-run-scripts
+	replaces = holo-ssh-keys
+	replaces = holo-users-groups
+	options = !strip
+	backup = etc/holorc
+	backup = etc/holorc.d/10-files
+	backup = etc/holorc.d/20-users-groups
+	backup = etc/holorc.d/25-ssh-keys
+	backup = etc/holorc.d/95-holo-run-scripts
+	source = https://github.com/holocm/holo/archive/v2.2.tar.gz
+	sha256sums = 56b8c47e8b872155fc50f1de972260189416fc7e0c9b6478ba81eed14eeaf72f
+
+pkgname = holo
+

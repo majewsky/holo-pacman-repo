@@ -14,6 +14,7 @@ src/
 
 .env
 .art-cache
+.vendor-cache
 repo/*.pkg.tar.xz
 repo/holo.db*
 repo/holo.files*

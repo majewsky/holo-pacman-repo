@@ -1,6 +1,0 @@
-[submodule "holo"]
-	path = holo
-	url = https://aur.archlinux.org/holo.git/
-[submodule "holo-build"]
-	path = holo-build
-	url = https://aur.archlinux.org/holo-build.git/
