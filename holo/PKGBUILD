@@ -5,7 +5,7 @@ pkgdesc='Minimalistic configuration management'
 arch=('i686' 'x86_64' 'armv7h' 'aarch64')
 url='http://holocm.org'
 license=('GPL3')
-depends=()
+depends=('holo-keyring')
 optdepends=(
     'git: to display diffs using git-diff(1)'
     'openssh: to provision SSH public keys'

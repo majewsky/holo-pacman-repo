@@ -1,11 +1,11 @@
 pkgname='replicator'
 pkgver=0.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Renders configuration files from templates'
 arch=('i686' 'x86_64' 'armv7h')
 url='https://github.com/holocm/replicator'
 license=('GPL3')
-depends=()
+depends=('holo-keyring')
 makedepends=('go')
 source=("https://github.com/holocm/${pkgname}/archive/v${pkgver}.tar.gz")
 sha256sums=('1575b749d33e9b262c0b91a102dad3b9ac4aad259b7ff6ff3c734eb76d5e30d7')
