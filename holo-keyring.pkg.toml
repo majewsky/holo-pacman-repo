@@ -1,6 +1,11 @@
+##### NOTE TO SELF
+#####
+##### When publishing a new package, adjust the version number and checksums in
+##### `install.html` on <https://github.com/holocm/holocm.github.io>.
+
 [package]
 name    = "holo-keyring"
-version = "20201009.1"
+version = "20201009.1" # HAVE YOU READ THE NOTE ABOVE?
 description = "PGP keyring for the Holo repository"
 
 requires = [
